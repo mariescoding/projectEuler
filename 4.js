@@ -44,12 +44,41 @@ let isPalindrome = (num) =>{
 // main code 
 
 function findPalindrome(){
-    for (let i =999;i>99;i--){
-        for(let j =999;j>99;j--){
-            let product = i * j 
-            if (isPalindrome(product)) return product
+
+    let i = 999;
+    let j = 999;
+    let k = 0
+
+    while(k>-1){
+        
+        let product = i * j 
+    
+        if (isPalindrome(product)){
+            console.log(i,j, product)
+            return product
+        } 
+
+        if (k%2==0){
+            j--
+        }else{
+             i--
         }
+    
+        k ++  
+        
     }
+
+
+    // for (let i =999;i>99;i--){
+    //     for(let j =999;j>99;j--){
+
+
+    //         let product = i * j 
+    //         if (isPalindrome(product)) return product
+
+
+    //     }
+    // }
     
 }
 
