@@ -3,10 +3,6 @@
 // What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
 
-// Question for Mike: for finding the smallest one, binary search would not work, right? do i not have another options besides linear search?
-
-
-
 // function to check if a given number is divisible by 1 to 20 , return true if so 
 
 function dividesOneTwenty(num){

@@ -25,7 +25,8 @@ let isPalindrome = (num) =>{
 
 
 // main code 
-// the code is not giving the largest number, i think it is to do with the traversal of i and j .
+// create variable & copmare each time
+
 
 function findPalindrome(){
 
