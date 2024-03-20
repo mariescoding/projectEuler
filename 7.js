@@ -16,20 +16,24 @@ function checkPrime(checkNum){
 
 // function to find prime number array 
 
-function findPrimeByIndex(num){
-    let primes = [];
-    let count = 0;
+function findNPrime(num){
+    let primeCount = 0;
+    let iterateNum = 2;
+    let primeNum = 0;
 
-    while(count<num){
-
-     
-    count++;
+    while(primeCount<num){
+        
+        if(checkPrime(iterateNum)){
+            primeCount++
+            primeNum = iterateNum
+        } 
+        iterateNum++
     }
+    
+    return primeNum
 
-   return primes;
 }
 
 // main code 
 
-console.log(findPrimeByIndex(10001))
-
+console.log(findNPrime(10001))
